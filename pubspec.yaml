@@ -53,6 +53,10 @@ flutter:
     - lang/
     - lottie/
     - images/
+    - images/aa.jpeg
+    - images/cc.jpeg
+    - images/dd.jpeg
+    - images/ff.jpeg
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

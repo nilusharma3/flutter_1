@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:practice_app/model/BannerItemData.dart';
 import 'package:practice_app/ui/screens/categoryHome/listItems/banner/bannerListItem/BannerListItem.dart';
+
+import '../../../../../res/dimens.dart';
 import 'BannerItem.dart';
 
 class BannerItemState extends State<BannerItem> {
@@ -28,16 +30,15 @@ class BannerItemState extends State<BannerItem> {
 
   // main container
   Widget getBannerBody() {
-    return Scaffold(
-      body: new ListView.builder(
-        scrollDirection: Axis.horizontal,
+    return SizedBox(
+      height: 250,
+      child: new ListView.builder(
+          scrollDirection: Axis.horizontal,
           itemCount: data.length,
+          shrinkWrap: true,
           itemBuilder: (context, index) {
-            return Container(
-              child: BannerListItem(data.elementAt(index)),
-            );
+            return BannerListItem(data.elementAt(index),data.length);
           }),
     ); //scaffold
   }
-  
 }

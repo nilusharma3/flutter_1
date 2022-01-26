@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:practice_app/model/BannerItemData.dart';
+
 import 'BannerListItemState.dart';
 
 class BannerListItem extends StatefulWidget {
-  BannerListItem(BannerItemData data) {
+  BannerListItem(BannerItemData data, int count) {
     bannerData = data;
+    this.count = count;
   }
 
+  int count = 0;
   late BannerItemData bannerData;
 
   @override
   State<StatefulWidget> createState() {
-    return BannerListItemState(bannerData);
+    return BannerListItemState(bannerData, count);
   }
 }

@@ -8,9 +8,6 @@ import 'package:practice_app/ui/screens/categoryHome/listItems/gallery/GalleryIt
 import 'package:practice_app/ui/screens/categoryHome/smallAdd/SmallAddItem.dart';
 
 
-
-
-
 class CategoryHomeState extends State<CategoryHomeScreen> {
   late List<HomeData> data;
 
@@ -37,7 +34,7 @@ class CategoryHomeState extends State<CategoryHomeScreen> {
     switch (data.elementAt(index).itemType) {
       case 1: //big add
         return getBigAddItem(index);
-      case 20: // banner
+      case 2: // banner
         return getBannerItem(index);
       case 3: // small add
         return getSmallAddItem(index);
