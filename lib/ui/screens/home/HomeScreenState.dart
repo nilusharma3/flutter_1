@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:practice_app/ui/drawer/NavDrawer.dart';
 import 'package:practice_app/ui/screens/categoryHome/CategroyHomeScreen.dart';
 import 'package:practice_app/ui/screens/home/HomeScreen.dart';
 import '../../../stringlocalization.dart';
@@ -23,6 +24,7 @@ class HomeScreenState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: NavDrawer(),
         appBar: HomeAppBar(),
         body: getBody(), //body
         bottomNavigationBar: getBottomNavBar() //bottom navigation bar

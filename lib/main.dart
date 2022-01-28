@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:practice_app/res/dimens.dart';
 import 'package:practice_app/stringlocalization.dart';
 import 'package:practice_app/ui/screens/home/HomeScreen.dart';
+import 'package:practice_app/ui/screens/sampleA.dart';
 import 'package:practice_app/ui/screens/splash/Splash.dart';
 
 void main() {
@@ -30,7 +31,7 @@ class SampleApp extends StatelessWidget {
             localeResolutionCallback: LocalizationService.localeResolutionCallBack,
             supportedLocales: LocalizationService.supportedLocales,
             localizationsDelegates: LocalizationService.localizationsDelegate,
-            home: HomePage(),
+            home: Splash(),
           );
         }
     );
